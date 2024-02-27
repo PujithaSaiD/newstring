@@ -1,0 +1,13 @@
+n=input()
+m=list(n)
+i=0
+j=len(n)-1
+for i in range(j):
+    temp=m[i]
+    m[i]=m[j]
+    m[j]=temp
+    j-=1
+p=""
+for i in m:
+    p+=i
+print(p)
